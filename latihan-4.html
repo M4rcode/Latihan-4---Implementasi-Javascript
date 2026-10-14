@@ -22,33 +22,29 @@
         </div>
 
         <div class="card">
-            <form class="form">
+            <form class="form" onsubmit="Show()">
                 <h1 style="font-size: 25px; color: #A1D890;">Pemilihan Produk</h1>
                 <hr style="width: 100%;">
                 <div class="row-fields">
                     <div class="row-fields">
                         <div class="field">
                             <label for="jenis_produk">Jenis Produk</label>
-                            <!-- onchange memicu JavaScript saat produk dipilih -->
                             <select id="jenis_produk" name="jenis_produk" class="input" onchange="updateMerk()">
                                 <option value="" selected disabled>Pilih Jenis Produk</option>
-                                <option value="Desktop">Desktop</option>
-                                <option value="Laptop">Laptop</option>
-                                <option value="Smartphone">Smartphone</option>
                             </select>
                         </div>
                         
                         <div class="field">
                             <label for="merk">Merk</label>
-                            <!-- Pilihan merk akan diisi otomatis oleh JavaScript -->
                             <select id="merk" name="merk" class="input">
                                 <option value="" selected disabled>Pilih Merk</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                <button  type="submit" class="submit" style="margin-top: 10px;">Submit</button>
+                <button type="submit" class="submit" style="margin-top: 10px;">Submit</button>
             </form>
         </div>
+        <script src="js/latihan-4.js"></script>
 </body>
 </html>
